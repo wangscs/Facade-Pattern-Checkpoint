@@ -6,7 +6,19 @@ namespace Facade_Pattern_Checkpoint
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ProductOrder store = new ProductOrder();
+            var receipt = store.Purchase(
+                "chair",
+                8.99,
+                1,
+                "12345",
+                "12/2020",
+                "001",
+                "23 Road lane",
+                "Houston",
+                "Texas",
+                "23094"
+            );
         }
     }
 }
