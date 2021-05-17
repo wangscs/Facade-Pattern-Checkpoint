@@ -2,8 +2,12 @@ namespace Facade_Pattern_Checkpoint
 {
   public class Shipment
   {
-    // Address addressToShip = new Address();
+    Address AddressToShip;
+    Product ProductToShip;
 
-
+    public Shipment(Address address, Product product) {
+      AddressToShip = address;
+      ProductToShip = product;
+    }
   }
 }
